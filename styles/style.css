@@ -1,3 +1,7 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -43,11 +47,16 @@ body {
 #schedule_timeslot {
     display: flex;
     width: 400px;
-    justify-content: space-around;
 
+    justify-content: center;
     margin: 5px;
 }
 
+#timeslot_time_label {
+    margin-right: 5px;
+}
+
 textarea {
+    width: 500px;
     resize: none;
 }
