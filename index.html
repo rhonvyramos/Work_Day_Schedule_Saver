@@ -2,22 +2,32 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Work Day Schedule Saver</title>
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/style.css">
   </head>
 
+  <!-- main content elements -->
   <body>
-    <!-- jquery script -->
-    <script
-    src="https://code.jquery.com/jquery-3.7.0.js"
-    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-    crossorigin="anonymous"></script>
-    
-    <!-- javascript -->
-    <script src="./scripts/script.js" type="module"></script>
-  </body>
+
+        <section id="content_header" class="content_holder">
+            <section id="header_title">
+                <h1 id="title_text">Work Day Scheduler</h1>
+                <p id="title_description">A simple calendar app for scheduling your work day.</p>
+            </section>
+        </section>
+        <section id="content_daily_schedule" class="content_holder"></section>
+
+        <!-- jquery script -->
+        <script
+        src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+        
+        <!-- javascript -->
+        <script src="./scripts/script.js" type="module"></script>
+    </body>
 </html>
