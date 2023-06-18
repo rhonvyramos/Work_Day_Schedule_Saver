@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .content_holder {
@@ -9,6 +10,7 @@ body {
 }
 
 #content_header {
+    justify-content: space-around;
     align-items: center;
 
     height: 150px;
@@ -22,4 +24,15 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+}
+
+#header_time {
+    margin-right: 20px;
+}
+
+#content_daily_schedule {
+    height: 750px;
+    width: 98%;
+
+    border-style: groove;
 }
