@@ -9,3 +9,10 @@ function refreshTime() {
 };
   
 setInterval(refreshTime, 1000);
+
+// let timeslot = document.getElementById("schedule_timeslot").cloneNode(true);
+var dailySchedule = document.getElementById("content_daily_schedule");
+for(var x = 0; x < 8; x++) {
+    let timeslot = document.getElementById("schedule_timeslot").cloneNode(true);
+    $(dailySchedule).append(timeslot)
+};
