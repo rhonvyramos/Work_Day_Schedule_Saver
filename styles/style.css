@@ -46,7 +46,8 @@ body {
 
 #schedule_timeslot {
     display: flex;
-    width: 400px;
+    height: 80px;
+    width: 900px;
 
     justify-content: center;
     margin: 5px;
@@ -57,6 +58,6 @@ body {
 }
 
 textarea {
-    width: 500px;
+    width: 800px;
     resize: none;
 }
