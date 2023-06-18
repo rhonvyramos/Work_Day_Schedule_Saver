@@ -34,5 +34,17 @@ body {
     height: 750px;
     width: 98%;
 
+    justify-content: center;
+    align-items: center;
     border-style: groove;
+}
+
+#schedule_timeslot {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+textarea {
+    resize: none;
 }
