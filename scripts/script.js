@@ -1,4 +1,4 @@
-
+// variable to hold real time as a label
 let headerTime = document.getElementById("time_realtime");
 
 // function to display real time for the user to compare their schedule to
@@ -20,10 +20,10 @@ let labelTenMorning = document.getElementById("timeslot_description_label_10AM")
 let labelElevenMorning = document.getElementById("timeslot_description_label_11AM");
 let labelTwelveAfternoon = document.getElementById("timeslot_description_label_12PM");
 let labelOneAfternoon = document.getElementById("timeslot_description_label_01PM");
-let labelTwoAfternoon = document.getElementById("timeslot_description_label_02AM");
-let labelThreeAfternoon = document.getElementById("timeslot_description_label_03AM");
-let labelFourAfternoon = document.getElementById("timeslot_description_label_04AM");
-let labelFiveAfternoon = document.getElementById("timeslot_description_label_05AM");
+let labelTwoAfternoon = document.getElementById("timeslot_description_label_02PM");
+let labelThreeAfternoon = document.getElementById("timeslot_description_label_03PM");
+let labelFourAfternoon = document.getElementById("timeslot_description_label_04PM");
+let labelFiveAfternoon = document.getElementById("timeslot_description_label_05PM");
 
 // changes timeslot description background color to red or green
 // red indicates timeslot is past
@@ -69,4 +69,52 @@ if(twelvePM > timeNow) {
     labelTwelveAfternoon.style.backgroundColor = "green";
 };
 
+// 01PM slot
+let onePM = dayjs().hour(13).hour();
+if(onePM < timeNow) {
+    labelOneAfternoon.style.backgroundColor = "red";
+};
 
+if(onePM > timeNow) {
+    labelOneAfternoon.style.backgroundColor = "green";
+};
+
+// 02PM slot
+let twoPM = dayjs().hour(14).hour();
+if(twoPM < timeNow) {
+    labelTwoAfternoon.style.backgroundColor = "red";
+};
+
+if(twoPM > timeNow) {
+    labelTwoAfternoon.style.backgroundColor = "green";
+};
+
+// 03PM slot
+let threePM = dayjs().hour(15).hour();
+if(threePM < timeNow) {
+    labelThreeAfternoon.style.backgroundColor = "red";
+};
+
+if(threePM > timeNow) {
+    labelThreeAfternoon.style.backgroundColor = "green";
+};
+
+// 04PM slot
+let fourPM = dayjs().hour(16).hour();
+if(fourPM < timeNow) {
+    labelFourAfternoon.style.backgroundColor = "red";
+};
+
+if(fourPM > timeNow) {
+    labelFourAfternoon.style.backgroundColor = "green";
+};
+
+// 05PM slot
+let fivePM = dayjs().hour(17).hour();
+if(fivePM < timeNow) {
+    labelFivefternoon.style.backgroundColor = "red";
+};
+
+if(fivePM > timeNow) {
+    labelFiveAfternoon.style.backgroundColor = "green";
+};
