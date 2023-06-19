@@ -36,6 +36,7 @@ export function label_saves() {
         labelThreeAfternoon,
         labelFiveAfternoon
     ];
+    return timeslot_labels;
 };
 
 // changes timeslot description background color to red or green
