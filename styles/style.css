@@ -16,7 +16,7 @@ textarea {
     transition-timing-function: ease-in;
 }
 
-textarea:hover{
+textarea:hover {
     transition: 0.2s;
     
     border-radius: 5px;
@@ -26,6 +26,23 @@ textarea:hover{
 
 textarea::placeholder {
     color:black;
+}
+
+button {
+    transition-timing-function: ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+
+    transition: 0.2s;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: black;
+}
+
+button:active {
+    background-color: darkgray;
 }
 
 .content_holder {
