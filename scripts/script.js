@@ -127,7 +127,7 @@ if(fourPM > timeNow) {
 // 05PM slot
 let fivePM = dayjs().hour(17).hour();
 if(fivePM < timeNow) {
-    labelFivefternoon.style.backgroundColor = "lightgray";
+    labelFiveAfternoon.style.backgroundColor = "lightgray";
 };
 
 if(fivePM > timeNow) {
