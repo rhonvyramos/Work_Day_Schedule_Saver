@@ -12,7 +12,6 @@ setInterval(refreshTime, 1000);
 
 // used to compare current time with time slot time labels
 var timeNow = dayjs().hour();
-console.log(timeNow)
 
 // timeslot labels
 let labelNineMorning = document.getElementById("timeslot_description_label_09AM");
@@ -24,6 +23,20 @@ let labelTwoAfternoon = document.getElementById("timeslot_description_label_02PM
 let labelThreeAfternoon = document.getElementById("timeslot_description_label_03PM");
 let labelFourAfternoon = document.getElementById("timeslot_description_label_04PM");
 let labelFiveAfternoon = document.getElementById("timeslot_description_label_05PM");
+
+// exports timeslot labels to label_save file
+export function label_saves() {
+    let timeslot_labels = [
+        labelNineMorning,
+        labelTenMorning,
+        labelElevenMorning,
+        labelTwelveAfternoon,
+        labelOneAfternoon,
+        labelTwoAfternoon,
+        labelThreeAfternoon,
+        labelFiveAfternoon
+    ];
+};
 
 // changes timeslot description background color to red or green
 // red indicates timeslot is past
@@ -46,7 +59,7 @@ if(tenAM < timeNow) {
 };
 
 if(tenAM > timeNow) {
-    labeltenMorning.style.backgroundColor = "green";
+    labelTenMorning.style.backgroundColor = "green";
 };
 
 // 11AM slot
