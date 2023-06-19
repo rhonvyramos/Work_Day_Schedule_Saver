@@ -1,3 +1,5 @@
+const dayjs = require("dayjs");
+
 let headerTime = document.getElementById("time_realtime");
 
 // function to display real time for the user to compare their schedule to
@@ -8,3 +10,6 @@ function refreshTime() {
     headerTime.innerHTML = formattedString;
 };
 setInterval(refreshTime, 1000);
+
+// used to compare current time with time slot time labels
+var timeNow = dayjs();
