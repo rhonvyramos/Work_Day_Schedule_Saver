@@ -12,6 +12,16 @@ body {
 textarea {
     width: 800px;
     resize: none;
+
+    transition-timing-function: ease-in;
+}
+
+textarea:hover{
+    transition: 0.2s;
+    
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: black;
 }
 
 textarea::placeholder {
