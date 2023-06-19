@@ -49,7 +49,7 @@ textarea {
     border-style: groove;
 }
 
-#schedule_timeslot {
+.schedule_timeslot {
     display: flex;
     height: 80px;
     width: 900px;

@@ -1,4 +1,4 @@
-const dayjs = require("dayjs");
+//
 
 let headerTime = document.getElementById("time_realtime");
 
@@ -13,3 +13,11 @@ setInterval(refreshTime, 1000);
 
 // used to compare current time with time slot time labels
 var timeNow = dayjs();
+let labelNineMorning = document.getElementById("timeslot_description_label_09AM");
+
+console.log(dayjs().hour(8))
+console.log(timeNow)
+
+if(dayjs().hour(9) < timeNow) {
+    labelNineMorning.style.backgroundColor = "red";
+}
