@@ -1,4 +1,4 @@
-import { label_saves } from "/scripts/script.js";
+import { label_saves } from "./script.js";
 let timeslot_labels = label_saves();
 
 // saves 09AM timeslot description
