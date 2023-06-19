@@ -47,6 +47,8 @@ button:active {
 
 .content_holder {
     display: flex;
+
+    box-shadow: 7px 7px 3px gray;
 }
 
 #content_header {
@@ -94,3 +96,13 @@ button:active {
     margin-right: 5px;
 }
 
+.schedule_timeslot {
+    border-style: groove;
+    transition-timing-function: ease-in;
+}
+
+.schedule_timeslot:hover {
+    transition: 0.2s;
+    transform: translate(0px, -3px);
+    box-shadow: 5px 5px 3px gray;
+}
