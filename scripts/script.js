@@ -47,7 +47,7 @@ export function label_saves() {
 // 09AM slot
 let nineAM = dayjs().hour(9).hour();
 if(nineAM < timeNow) {
-    labelNineMorning.style.backgroundColor = "red";
+    labelNineMorning.style.backgroundColor = "gray";
 };
 
 if(nineAM > timeNow) {
@@ -57,7 +57,7 @@ if(nineAM > timeNow) {
 // 10AM slot
 let tenAM = dayjs().hour(10).hour();
 if(tenAM < timeNow) {
-    labelTenMorning.style.backgroundColor = "red";
+    labelTenMorning.style.backgroundColor = "gray";
 };
 
 if(tenAM > timeNow) {
@@ -67,7 +67,7 @@ if(tenAM > timeNow) {
 // 11AM slot
 let elevenAM = dayjs().hour(11).hour();
 if(elevenAM < timeNow) {
-    labelElevenMorning.style.backgroundColor = "red";
+    labelElevenMorning.style.backgroundColor = "gray";
 };
 
 if(elevenAM > timeNow) {
@@ -77,7 +77,7 @@ if(elevenAM > timeNow) {
 // 12PM slot
 let twelvePM = dayjs().hour(12).hour();
 if(twelvePM < timeNow) {
-    labelTwelveAfternoon.style.backgroundColor = "red";
+    labelTwelveAfternoon.style.backgroundColor = "gray";
 };
 
 if(twelvePM > timeNow) {
@@ -87,7 +87,7 @@ if(twelvePM > timeNow) {
 // 01PM slot
 let onePM = dayjs().hour(13).hour();
 if(onePM < timeNow) {
-    labelOneAfternoon.style.backgroundColor = "red";
+    labelOneAfternoon.style.backgroundColor = "gray";
 };
 
 if(onePM > timeNow) {
@@ -97,7 +97,7 @@ if(onePM > timeNow) {
 // 02PM slot
 let twoPM = dayjs().hour(14).hour();
 if(twoPM < timeNow) {
-    labelTwoAfternoon.style.backgroundColor = "red";
+    labelTwoAfternoon.style.backgroundColor = "gray";
 };
 
 if(twoPM > timeNow) {
@@ -107,7 +107,7 @@ if(twoPM > timeNow) {
 // 03PM slot
 let threePM = dayjs().hour(15).hour();
 if(threePM < timeNow) {
-    labelThreeAfternoon.style.backgroundColor = "red";
+    labelThreeAfternoon.style.backgroundColor = "gray";
 };
 
 if(threePM > timeNow) {
@@ -117,7 +117,7 @@ if(threePM > timeNow) {
 // 04PM slot
 let fourPM = dayjs().hour(16).hour();
 if(fourPM < timeNow) {
-    labelFourAfternoon.style.backgroundColor = "red";
+    labelFourAfternoon.style.backgroundColor = "gray";
 };
 
 if(fourPM > timeNow) {
@@ -127,7 +127,7 @@ if(fourPM > timeNow) {
 // 05PM slot
 let fivePM = dayjs().hour(17).hour();
 if(fivePM < timeNow) {
-    labelFivefternoon.style.backgroundColor = "red";
+    labelFivefternoon.style.backgroundColor = "gray";
 };
 
 if(fivePM > timeNow) {
