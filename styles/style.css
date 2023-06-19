@@ -10,6 +10,7 @@ body {
 }
 
 textarea {
+    height: 120px;
     width: 800px;
     resize: none;
 
@@ -73,18 +74,17 @@ button:active {
 }
 
 #content_daily_schedule {
-    height: 750px;
+    height: 1500px;
     width: 98%;
     flex-direction: column;
 
-    justify-content: center;
     align-items: center;
     border-style: groove;
 }
 
 .schedule_timeslot {
     display: flex;
-    height: 80px;
+    height: 180px;
     width: 900px;
 
     justify-content: center;
