@@ -40,9 +40,9 @@ export function label_saves() {
     return timeslot_labels;
 };
 
-// changes timeslot description background color to red or green
-// red indicates timeslot is past
-// green indicates timeslot is future
+// changes timeslot description background color to light gray or green
+// light gray indicates timeslot is past task
+// green indicates timeslot is future task
 
 // 09AM slot
 let nineAM = dayjs().hour(9).hour();
