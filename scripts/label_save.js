@@ -16,10 +16,18 @@ let savedLabel10AM = "task_tenAM";
 saveButton10AM.addEventListener("click", function() {
     saveDescriptionLabel(savedLabel10AM, 1) 
 });
-// loads 09AM timeslot description
+// loads 10AM timeslot description
 loadDescriptionLabel(savedLabel10AM, 1);
 
 // saves 11AM
+let saveButton11AM = document.getElementById("timeslot_description_save_button_11AM");
+let savedLabel11AM = "task_elevenAM";
+saveButton11AM.addEventListener("click", function() {
+    saveDescriptionLabel(savedLabel11AM, 2) 
+});
+// loads 11AM timeslot description
+loadDescriptionLabel(savedLabel11AM, 2);
+
 // saves 12PM
 // saves 01PM
 // saves 02PM
