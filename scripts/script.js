@@ -34,6 +34,7 @@ export function label_saves() {
         labelOneAfternoon,
         labelTwoAfternoon,
         labelThreeAfternoon,
+        labelFourAfternoon,
         labelFiveAfternoon
     ];
     return timeslot_labels;
