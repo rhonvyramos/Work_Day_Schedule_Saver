@@ -1,4 +1,3 @@
-//
 
 let headerTime = document.getElementById("time_realtime");
 
@@ -12,7 +11,8 @@ function refreshTime() {
 setInterval(refreshTime, 1000);
 
 // used to compare current time with time slot time labels
-var timeNow = dayjs();
+var timeNow = dayjs().hour();
+console.log(timeNow)
 
 // timeslot labels
 let labelNineMorning = document.getElementById("timeslot_description_label_09AM");
@@ -25,11 +25,48 @@ let labelThreeAfternoon = document.getElementById("timeslot_description_label_03
 let labelFourAfternoon = document.getElementById("timeslot_description_label_04AM");
 let labelFiveAfternoon = document.getElementById("timeslot_description_label_05AM");
 
-console.log(dayjs().hour(8))
-console.log(timeNow)
+// changes timeslot description background color to red or green
+// red indicates timeslot is past
+// green indicates timeslot is future
 
-if(dayjs().hour(9) < timeNow) {
+// 09AM slot
+let nineAM = dayjs().hour(9).hour();
+if(nineAM < timeNow) {
     labelNineMorning.style.backgroundColor = "red";
-}
+};
+
+if(nineAM > timeNow) {
+    labelNineMorning.style.backgroundColor = "green";
+};
+
+// 10AM slot
+let tenAM = dayjs().hour(10).hour();
+if(tenAM < timeNow) {
+    labelTenMorning.style.backgroundColor = "red";
+};
+
+if(tenAM > timeNow) {
+    labeltenMorning.style.backgroundColor = "green";
+};
+
+// 11AM slot
+let elevenAM = dayjs().hour(11).hour();
+if(elevenAM < timeNow) {
+    labelElevenMorning.style.backgroundColor = "red";
+};
+
+if(elevenAM > timeNow) {
+    labelElevenMorning.style.backgroundColor = "green";
+};
+
+// 12PM slot
+let twelvePM = dayjs().hour(12).hour();
+if(twelvePM < timeNow) {
+    labelTwelveAfternoon.style.backgroundColor = "red";
+};
+
+if(twelvePM > timeNow) {
+    labelTwelveAfternoon.style.backgroundColor = "green";
+};
 
 
