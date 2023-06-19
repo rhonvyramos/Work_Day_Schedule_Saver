@@ -2,14 +2,32 @@ import { label_saves } from "/scripts/script.js";
 let timeslot_labels = label_saves();
 
 // saves 09AM timeslot description
-let saveButton9AM = document.getElementById("timeslot_description_save_button_09AM");
-saveButton9AM.addEventListener("click", saveDescriptionLabel);
-function saveDescriptionLabel() {
-    localStorage.setItem("task_nineAM", timeslot_labels[0].value);
+let saveButton09AM = document.getElementById("timeslot_description_save_button_09AM");
+let savedLabel09AM = "task_nineAM";
+saveButton09AM.addEventListener("click", function() {
+    saveDescriptionLabel(savedLabel09AM) 
+});
+// loads 09AM timeslot description
+loadDescriptionLabel(savedLabel09AM, 0);
+
+// saves 10AM
+// saves 11AM
+// saves 12PM
+// saves 01PM
+// saves 02PM
+// saves 03PM
+// saves 04PM
+// saves 05PM
+
+function saveDescriptionLabel(savedLabel) {
+    let slot09AM = timeslot_labels[0].value;
+    localStorage.setItem(savedLabel, slot09AM);
 };
 
-if(localStorage.getItem("task_nineAM") != null || localStorage.getItem("task_nineAM") != "") {
-    console.log(localStorage.getItem("task_nineAM"))
-    timeslot_labels[0].value = localStorage.getItem("task_nineAM");
+function loadDescriptionLabel(savedLabel, timeslot) {
+    let savedText = localStorage.getItem(savedLabel);
+    if(savedText != null || savedText != "") {
+        timeslot_labels[timeslot].value = savedText;
+    };
 };
 
